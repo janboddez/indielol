@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post Meta
- * Slug: jan-boddez/post-meta
+ * Slug: janboddez/post-meta
  * Categories: query
  * Keywords: post meta
  * Block Types: core/template-part/post-meta
@@ -17,7 +17,7 @@
 <div class="wp-block-group"><!-- wp:post-date {"isLink":true} /-->
 
 <!-- wp:paragraph {"className":"screen-reader-text"} -->
-<p class="screen-reader-text"><?php echo esc_html_x( 'by', 'Preposition to show the relationship between the post and its author', 'jan-boddez' ); ?></p>
+<p class="screen-reader-text"><?php echo esc_html_x( 'by', 'Preposition to show the relationship between the post and its author', 'janboddez' ); ?></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:post-author {"showAvatar":false,"isLink":true,"className":"screen-reader-text"} /--></div>
