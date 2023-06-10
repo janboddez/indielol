@@ -339,7 +339,7 @@
 				},
 				"typography": {
 					"fontWeight": "700",
-					"lineHeight": 1
+					"lineHeight": "1"
 				}
 			}
 		},
