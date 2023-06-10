@@ -6,7 +6,7 @@
  */
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained"} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:indieblocks/facepile -->
 <div class="wp-block-indieblocks-facepile"><!-- wp:heading -->
 <h2 class="wp-block-heading"><?php echo esc_html_x( 'Likes, Bookmarks, and Reposts', 'Title of the likes, bookmarks, and reposts "facepile"', 'janboddez' ); ?></h2>
@@ -16,11 +16,7 @@
 <!-- /wp:indieblocks/facepile -->
 
 <!-- wp:comments -->
-<div class="wp-block-comments"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php echo esc_html_x( 'Comments', 'Title of comments section', 'janboddez' ); ?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:comments-title {"level":3} /-->
+<div class="wp-block-comments"><!-- wp:comments-title {"level":2} /-->
 
 <!-- wp:comment-template -->
 <!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
