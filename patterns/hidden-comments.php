@@ -16,7 +16,7 @@
 <!-- /wp:indieblocks/facepile -->
 
 <!-- wp:comments -->
-<div class="wp-block-comments"><!-- wp:comments-title {"level":2} /-->
+<div class="wp-block-comments"><!-- wp:comments-title /-->
 
 <!-- wp:comment-template -->
 <!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
