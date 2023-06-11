@@ -20,8 +20,8 @@
 
 <!-- wp:comment-template -->
 <!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-<div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"width":"40px"} -->
-<div class="wp-block-column" style="flex-basis:40px"><!-- wp:avatar {"size":48,"style":{"border":{"radius":"50%"}}} /--></div>
+<div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--40)"><!-- wp:column {"width":"48px"} -->
+<div class="wp-block-column" style="flex-basis:48px"><!-- wp:avatar {"size":48,"isLink":true,"style":{"border":{"radius":"50%"},"spacing":{"margin":{"top":"0.25rem"}}}} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->

@@ -251,27 +251,8 @@
 				},
 				"spacing": {
 					"margin": {
-						"bottom": "var(--wp--preset--spacing--40)",
+						"bottom": "var(--wp--preset--spacing--30)",
 						"top": "var(--wp--preset--spacing--40)"
-					}
-				}
-			},
-			"core/pullquote": {
-				"border": {
-					"width": "1px 0"
-				},
-				"elements": {
-					"cite": {
-						"typography": {
-							"fontSize": "var(--wp--preset--font-size--small)",
-							"fontStyle": "normal"
-						}
-					}
-				},
-				"spacing": {
-					"margin": {
-						"bottom": "var(--wp--preset--spacing--40) !important",
-						"top": "var(--wp--preset--spacing--40) !important"
 					}
 				}
 			},
@@ -285,13 +266,20 @@
 				}
 			},
 			"core/query-pagination": {
+				"elements": {
+					"link": {
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
+				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
 				}
 			},
 			"core/quote": {
-				"border": {
-					"width": "1px 0"
+				"color": {
+					"background": "#eee"
 				},
 				"elements": {
 					"cite": {
@@ -302,9 +290,17 @@
 					}
 				},
 				"spacing": {
+					"margin": {
+						"bottom": "var(--wp--preset--spacing--30)",
+						"left": "0",
+						"right": "0",
+						"top": "var(--wp--preset--spacing--30)"
+					},
 					"padding": {
-						"left": "var(--wp--preset--spacing--30)",
-						"right": "var(--wp--preset--spacing--30)"
+						"bottom": "var(--wp--preset--spacing--30)",
+						"left": "var(--wp--preset--spacing--50)",
+						"right": "var(--wp--preset--spacing--50)",
+						"top": "var(--wp--preset--spacing--30)"
 					}
 				}
 			},
@@ -386,6 +382,11 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--x-large)",
 					"lineHeight": "1.2"
+				},
+				"spacing": {
+					"margin": {
+						"top": "var(--wp--preset--spacing--40) !important"
+					}
 				}
 			},
 			"h3": {
@@ -449,7 +450,7 @@
 				"bottom": "var(--wp--preset--spacing--40)",
 				"left": "var(--wp--preset--spacing--30)",
 				"right": "var(--wp--preset--spacing--30)",
-				"top": "var(--wp--preset--spacing--50)"
+				"top": "var(--wp--preset--spacing--40)"
 			}
 		},
 		"typography": {
