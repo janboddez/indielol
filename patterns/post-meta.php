@@ -25,10 +25,7 @@
 <!-- /wp:column -->
 
 <!-- wp:column -->
-<div class="wp-block-column"><!-- wp:indieblocks/location {"className":"aligncenter"} /-->
-<?php if ( '' === get_post_meta( get_the_ID(), 'short_url', true ) ) : ?>
-	• <a href="<?php echo esc_url( get_post_meta( get_the_ID(), 'short_url', true ) ); ?>" rel="shortlink"><?php echo esc_html( wp_parse_url( get_post_meta( get_the_ID(), 'short_url', true ), PHP_URL_HOST ) ); ?></a>
-<?php endif; ?></div>
+<div class="wp-block-column"><!-- wp:indieblocks/location {"includeWeather":true,"className":"aligncenter"} /--></div>
 <!-- /wp:column -->
 
 <!-- wp:column -->
