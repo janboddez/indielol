@@ -337,6 +337,18 @@
 					"fontWeight": "700",
 					"lineHeight": "1"
 				}
+			},
+			"indieblocks/bookmark": {
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
+			},
+			"indieblocks/like": {
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
+			},
+			"indieblocks/repost": {
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
+			},
+			"indieblocks/reply": {
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
 			}
 		},
 		"color": {
