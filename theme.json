@@ -40,7 +40,7 @@
 			]
 		},
 		"layout": {
-			"contentSize": "1010px"
+			"contentSize": "1080px"
 		},
 		"spacing": {
 			"spacingScale": {
@@ -54,27 +54,27 @@
 				},
 				{
 					"name": "2",
-					"size": "1.5rem",
+					"size": "1.75rem",
 					"slug": "40"
 				},
 				{
 					"name": "3",
-					"size": "2rem",
+					"size": "2.5rem",
 					"slug": "50"
 				},
 				{
 					"name": "4",
-					"size": "2.5rem",
+					"size": "3.25rem",
 					"slug": "60"
 				},
 				{
 					"name": "5",
-					"size": "3rem",
+					"size": "4rem",
 					"slug": "70"
 				},
 				{
 					"name": "6",
-					"size": "3.5rem",
+					"size": "4.75rem",
 					"slug": "80"
 				}
 			],
@@ -167,6 +167,21 @@
 					],
 					"fontFamily": "Merriweather",
 					"slug": "merriweather"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Roboto Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Roboto-Mono-Regular.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Roboto Mono\", monospace, monospace",
+					"name": "Roboto Mono",
+					"slug": "roboto-mono"
 				}
 			],
 			"fontSizes": [
@@ -241,10 +256,10 @@
 				}
 			},
 			"core/post-title": {
+				"css": "& a:where(:not(.wp-element-button))\n{\n\ttext-decoration: none;\n}",
 				"elements": {
 					"link": {
 						"typography": {
-							"fontWeight": "700",
 							"textDecoration": "none"
 						}
 					}
@@ -338,17 +353,20 @@
 					"lineHeight": "1"
 				}
 			},
+			"core/table-of-contents": {
+				"css": "& li {\n\tmargin-inline-start: var(--wp--preset--spacing--30);\n}"
+			},
 			"indieblocks/bookmark": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
 			},
 			"indieblocks/like": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
 			},
 			"indieblocks/repost": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
 			},
 			"indieblocks/reply": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp-preset--spacing--30)\n}"
+				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
 			}
 		},
 		"color": {
@@ -397,7 +415,7 @@
 				},
 				"spacing": {
 					"margin": {
-						"top": "var(--wp--preset--spacing--40) !important"
+						"top": "var(--wp--preset--spacing--40)"
 					}
 				}
 			},

@@ -11,8 +11,8 @@
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:post-terms {"term":"post_tag","prefix":"Tagged: ","style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"fontFamily":"merriweather"} /-->
 
-<!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"margin":{"top":"var:preset|spacing|30"}}},"fontSize":"small"} -->
-<div class="wp-block-columns is-not-stacked-on-mobile has-small-font-size" style="margin-top:var(--wp--preset--spacing--30)"><!-- wp:column -->
+<!-- wp:columns {"isStackedOnMobile":false,"style":{"spacing":{"margin":{"top":"var:preset|spacing|40"}}},"fontSize":"small"} -->
+<div class="wp-block-columns is-not-stacked-on-mobile has-small-font-size" style="margin-top:var(--wp--preset--spacing--40)"><!-- wp:column -->
 <div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"blockGap":"0.5ch"}},"layout":{"type":"flex"}} -->
 <div class="wp-block-group"><!-- wp:post-date {"isLink":true} /-->
 
@@ -31,5 +31,7 @@
 <!-- wp:column -->
 <div class="wp-block-column"><!-- wp:indieblocks/syndication {"className":"alignright"} /--></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns -->
+
+<!-- wp:indieblocks/link-preview {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"0"}},"border":{"radius":"5px","color":"#cccccc","width":"1px"}}} /--></div>
 <!-- /wp:group -->
