@@ -33,7 +33,7 @@
 					"slug": "secondary"
 				},
 				{
-					"color": "#555",
+					"color": "#666",
 					"name": "Tertiary",
 					"slug": "tertiary"
 				}
@@ -49,32 +49,32 @@
 			"spacingSizes": [
 				{
 					"name": "1",
-					"size": "1rem",
+					"size": "1.25rem",
 					"slug": "30"
 				},
 				{
 					"name": "2",
-					"size": "1.75rem",
+					"size": "2rem",
 					"slug": "40"
 				},
 				{
 					"name": "3",
-					"size": "2.5rem",
+					"size": "2.75rem",
 					"slug": "50"
 				},
 				{
 					"name": "4",
-					"size": "3.25rem",
+					"size": "3.5rem",
 					"slug": "60"
 				},
 				{
 					"name": "5",
-					"size": "4rem",
+					"size": "4.25rem",
 					"slug": "70"
 				},
 				{
 					"name": "6",
-					"size": "4.75rem",
+					"size": "5rem",
 					"slug": "80"
 				}
 			],
@@ -89,7 +89,7 @@
 		},
 		"typography": {
 			"dropCap": false,
-			"fluid": false,
+			"fluid": true,
 			"fontFamilies": [
 				{
 					"fontFace": [
@@ -186,22 +186,42 @@
 			],
 			"fontSizes": [
 				{
+					"fluid": {
+						"min": "0.8rem",
+						"max": "1rem"
+					},
 					"size": "1rem",
 					"slug": "small"
 				},
 				{
+					"fluid": {
+						"min": "1rem",
+						"max": "1.25rem"
+					},
 					"size": "1.25rem",
 					"slug": "medium"
 				},
 				{
+					"fluid": {
+						"min": "1.3rem",
+						"max": "1.625rem"
+					},
 					"size": "1.625rem",
 					"slug": "large"
 				},
 				{
+					"fluid": {
+						"min": "1.5rem",
+						"max": "1.825rem"
+					},
 					"size": "1.875rem",
 					"slug": "x-large"
 				},
 				{
+					"fluid": {
+						"min": "1.8rem",
+						"max": "2.25rem"
+					},
 					"size": "2.25rem",
 					"slug": "xx-large"
 				}
@@ -211,6 +231,21 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/code": {
+				"css": "overflow-x: auto;",
+				"spacing": {
+					"padding": {
+						"bottom": "var(--wp--preset--spacing--30)",
+						"left": "var(--wp--preset--spacing--30)",
+						"right": "var(--wp--preset--spacing--30)",
+						"top": "var(--wp--preset--spacing--30)"
+					}
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|roboto-mono",
+					"fontSize": "0.9em"
+				}
+			},
 			"core/comment-date": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
@@ -229,14 +264,14 @@
 			"core/comments-pagination": {
 				"spacing": {
 					"margin": {
-						"top": "var(--wp--preset--spacing--40)"
+						"top": "var(--wp--preset--spacing--30)"
 					}
 				}
 			},
 			"core/comments-title": {
 				"spacing": {
 					"margin": {
-						"bottom": "var(--wp--preset--spacing--40)"
+						"bottom": "var(--wp--preset--spacing--30)"
 					}
 				},
 				"typography": {
@@ -256,7 +291,6 @@
 				}
 			},
 			"core/post-title": {
-				"css": "& a:where(:not(.wp-element-button))\n{\n\ttext-decoration: none;\n}",
 				"elements": {
 					"link": {
 						"typography": {
@@ -267,7 +301,7 @@
 				"spacing": {
 					"margin": {
 						"bottom": "var(--wp--preset--spacing--30)",
-						"top": "var(--wp--preset--spacing--40)"
+						"top": "var(--wp--preset--spacing--30)"
 					}
 				}
 			},
@@ -355,25 +389,13 @@
 			},
 			"core/table-of-contents": {
 				"css": "& li {\n\tmargin-inline-start: var(--wp--preset--spacing--30);\n}"
-			},
-			"indieblocks/bookmark": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
-			},
-			"indieblocks/like": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
-			},
-			"indieblocks/repost": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
-			},
-			"indieblocks/reply": {
-				"css": "& > .h-cite p {\n\tmargin-block: var(--wp--preset--spacing--30);\n}"
 			}
 		},
 		"color": {
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
-		"css": "@media (min-width: 782px) {\n\thtml {\n\t\toverflow-y: scroll;\n\t}\n\n\t.wp-block-navigation-item__label::after {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\twidth: 0;\n\t\theight: 1px;\n\t\tbackground: #999;\n\t\ttransition: width 0.25s;\n\t}\n\n\t.wp-block-navigation-item__content:hover .wp-block-navigation-item__label::after {\n\t\twidth: 100%;\n\t}\n}\n\n@media (min-width: 1224px) {\n\t.wp-block-query-pagination a {\n\t\tbackground: #fff;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\tpadding: 1rem;\n\t\ttransform: translateY(-50%);\n\t\tborder: solid 1px #ddd;\n\t\tz-index: 11;\n\t}\n\n\t.wp-block-query-pagination-previous {\n\t\tleft: 0;\n\t\tborder-radius: 0 .5rem .5rem 0;\n\t\tborder-left: none;\n\t}\n\n\t.wp-block-query-pagination-next {\n\t\tright: 0;\n\t\tborder-radius: .5rem 0 0 .5rem;\n\t\tborder-right: none;\n\t}\n}\n\nul, ol {\n\tpadding-inline-start: 0;\n}\n\n.aligncenter {\n\tmargin: 0 auto;\n\ttext-align: center;\n}",
+		"css": "@media (min-width: 782px) {\n\thtml {\n\t\toverflow-y: scroll;\n\t}\n\n\t.wp-block-navigation-item__content::after {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\twidth: 0;\n\t\theight: 1px;\n\t\tbackground: #999;\n\t\ttransition: width 0.25s;\n\t}\n\n\t.wp-block-navigation-item__content:hover::after {\n\t\twidth: 100%;\n\t}\n}\n\n@media (min-width: 1224px) {\n\t.wp-block-query-pagination a {\n\t\tbackground: #fff;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\tpadding: 1rem;\n\t\ttransform: translateY(-50%);\n\t\tborder: solid 1px #ddd;\n\t\tz-index: 11;\n\t}\n\n\t.wp-block-query-pagination-previous {\n\t\tleft: 0;\n\t\tborder-radius: 0 .5rem .5rem 0;\n\t\tborder-left: none !important;\n\t}\n\n\t.wp-block-query-pagination-next {\n\t\tright: 0;\n\t\tborder-radius: .5rem 0 0 .5rem;\n\t\tborder-right: none !important;\n\t}\n}\n\nul, ol {\n\tpadding-inline-start: 0;\n}\n\n.aligncenter {\n\tmargin: 0 auto;\n\ttext-align: center;\n}",
 		"elements": {
 			"button": {
 				":active": {
@@ -415,7 +437,7 @@
 				},
 				"spacing": {
 					"margin": {
-						"top": "var(--wp--preset--spacing--40)"
+						"top": "var(--wp--preset--spacing--30)"
 					}
 				}
 			},
@@ -446,6 +468,7 @@
 					"text": "var(--wp--preset--color--tertiary)"
 				},
 				"typography": {
+					"fontFamily": "var:preset|font-family|inter",
 					"fontWeight": "700",
 					"lineHeight": "1.4"
 				}
