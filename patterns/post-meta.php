@@ -20,7 +20,7 @@
 <p class="screen-reader-text"><?php echo esc_html_x( 'by', 'Preposition to show the relationship between the post and its author', 'janboddez' ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:post-author {"showAvatar":false,"isLink":true,"className":"screen-reader-text"} /--></div>
+<!-- wp:post-author {"showAvatar":true,"isLink":true,"className":"screen-reader-text"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 
@@ -33,5 +33,5 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:indieblocks/link-preview {"style":{"spacing":{"margin":{"top":"var:preset|spacing|40","bottom":"0"}},"border":{"radius":"5px","color":"#cccccc","width":"1px"}}} /--></div>
+<!-- wp:indieblocks/link-preview {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"0"}},"border":{"radius":"5px","color":"#cccccc","width":"1px"}}} /--></div>
 <!-- /wp:group -->
