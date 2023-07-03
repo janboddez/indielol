@@ -347,8 +347,8 @@
 					},
 					"padding": {
 						"bottom": "var(--wp--preset--spacing--30)",
-						"left": "var(--wp--preset--spacing--50)",
-						"right": "var(--wp--preset--spacing--50)",
+						"left": "var(--wp--preset--spacing--40)",
+						"right": "var(--wp--preset--spacing--40)",
 						"top": "var(--wp--preset--spacing--30)"
 					}
 				}
@@ -434,11 +434,6 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--x-large)",
 					"lineHeight": "1.2"
-				},
-				"spacing": {
-					"margin": {
-						"top": "var(--wp--preset--spacing--30)"
-					}
 				}
 			},
 			"h3": {
