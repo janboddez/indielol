@@ -49,31 +49,36 @@
 			"spacingSizes": [
 				{
 					"name": "1",
+					"size": "0.5rem",
+					"slug": "20"
+				},
+				{
+					"name": "2",
 					"size": "1.25rem",
 					"slug": "30"
 				},
 				{
-					"name": "2",
+					"name": "3",
 					"size": "2rem",
 					"slug": "40"
 				},
 				{
-					"name": "3",
+					"name": "4",
 					"size": "2.75rem",
 					"slug": "50"
 				},
 				{
-					"name": "4",
+					"name": "5",
 					"size": "3.5rem",
 					"slug": "60"
 				},
 				{
-					"name": "5",
+					"name": "6",
 					"size": "4.25rem",
 					"slug": "70"
 				},
 				{
-					"name": "6",
+					"name": "7",
 					"size": "5rem",
 					"slug": "80"
 				}
