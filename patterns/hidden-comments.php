@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hidden Comments
- * Slug: janboddez/hidden-comments
+ * Slug: indielol/hidden-comments
  * Inserter: no
  */
 ?>
@@ -9,7 +9,7 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:indieblocks/facepile -->
 <div class="wp-block-indieblocks-facepile"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php echo esc_html_x( 'Likes, Bookmarks, and Reposts', 'Title of the likes, bookmarks, and reposts "facepile"', 'janboddez' ); ?></h2>
+<h2 class="wp-block-heading"><?php echo esc_html_x( 'Likes, Bookmarks, and Reposts', 'Title of the likes, bookmarks, and reposts "facepile"', 'indielol' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:indieblocks/facepile-content {"avatarSize":3,"icons":true} /--></div>
