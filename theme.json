@@ -246,6 +246,11 @@
 					"fontSize": "0.9em"
 				}
 			},
+			"core/comment-content": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|merriweather"
+				}
+			},
 			"core/comment-date": {
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
@@ -288,6 +293,16 @@
 							"textDecoration": "none"
 						}
 					}
+				}
+			},
+			"core/post-content": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|merriweather"
+				}
+			},
+			"core/post-excerpt": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|merriweather"
 				}
 			},
 			"core/post-title": {

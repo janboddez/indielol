@@ -33,7 +33,7 @@
 <!-- wp:comment-edit-link /--></div>
 <!-- /wp:group -->
 
-<!-- wp:comment-content {"fontFamily":"merriweather"} /-->
+<!-- wp:comment-content /-->
 
 <!-- wp:comment-reply-link /--></div>
 <!-- /wp:column --></div>
