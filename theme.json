@@ -142,7 +142,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/Merriweather-Regular.woff2"
+								"file:./assets/fonts/merriweather-v30-latin_latin-ext-regular.woff2"
 							]
 						},
 						{
@@ -150,7 +150,7 @@
 							"fontStyle": "italic",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/Merriweather-Italic.woff2"
+								"file:./assets/fonts/merriweather-v30-latin_latin-ext-italic.woff2"
 							]
 						},
 						{
@@ -158,7 +158,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "700",
 							"src": [
-								"file:./assets/fonts/Merriweather-Bold.woff2"
+								"file:./assets/fonts/merriweather-v30-latin_latin-ext-700.woff2"
 							]
 						},
 						{
@@ -166,11 +166,11 @@
 							"fontStyle": "italic",
 							"fontWeight": "700",
 							"src": [
-								"file:./assets/fonts/Merriweather-BoldItalic.woff2"
+								"file:./assets/fonts/merriweather-v30-latin_latin-ext-700italic.woff2"
 							]
 						}
 					],
-					"fontFamily": "Merriweather",
+					"fontFamily": "\"Merriweather\", Georgia, serif",
 					"slug": "merriweather"
 				},
 				{
@@ -366,10 +366,10 @@
 						"top": "var(--wp--preset--spacing--30)"
 					},
 					"padding": {
-						"bottom": "var(--wp--preset--spacing--30)",
+						"bottom": "var(--wp--preset--spacing--20)",
 						"left": "var(--wp--preset--spacing--40)",
 						"right": "var(--wp--preset--spacing--40)",
-						"top": "var(--wp--preset--spacing--30)"
+						"top": "var(--wp--preset--spacing--20)"
 					}
 				}
 			},
@@ -415,7 +415,7 @@
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
-		"css": "@media (min-width: 782px) {\n\thtml {\n\t\toverflow-y: scroll;\n\t}\n\n\t.wp-block-navigation-item__content::after {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\twidth: 0;\n\t\theight: 1px;\n\t\tbackground: #999;\n\t\ttransition: width 0.25s;\n\t}\n\n\t.wp-block-navigation-item__content:hover::after {\n\t\twidth: 100%;\n\t}\n}\n\n@media (min-width: 1224px) {\n\t.wp-block-query-pagination a {\n\t\tbackground: #fff;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\tpadding: 1rem;\n\t\ttransform: translateY(-50%);\n\t\tborder: solid 1px #ddd;\n\t\tz-index: 11;\n\t}\n\n\t.wp-block-query-pagination-previous {\n\t\tleft: 0;\n\t\tborder-radius: 0 .5rem .5rem 0;\n\t\tborder-left: none !important;\n\t}\n\n\t.wp-block-query-pagination-next {\n\t\tright: 0;\n\t\tborder-radius: .5rem 0 0 .5rem;\n\t\tborder-right: none !important;\n\t}\n}\n\nul, ol {\n\tpadding-inline-start: 0;\n}\n\n.aligncenter {\n\tmargin: 0 auto;\n\ttext-align: center;\n}",
+		"css": "@media (min-width: 782px) {\n\thtml {\n\t\toverflow-y: scroll;\n\t}\n\n\t.wp-block-navigation-item__content::after {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\twidth: 0;\n\t\theight: 1px;\n\t\tbackground: #999;\n\t\ttransition: width 0.25s;\n\t}\n\n\t.wp-block-navigation-item__content:hover::after {\n\t\twidth: 100%;\n\t}\n}\n\n@media (min-width: 1224px) {\n\t.wp-block-query-pagination a {\n\t\tbackground: #fff;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\tpadding: 1rem;\n\t\ttransform: translateY(-50%);\n\t\tborder: solid 1px #ddd;\n\t\tz-index: 11;\n\t}\n\n\t.wp-block-query-pagination-previous {\n\t\tleft: 0;\n\t\tborder-radius: 0 .5rem .5rem 0;\n\t\tborder-left: none !important;\n\t}\n\n\t.wp-block-query-pagination-next {\n\t\tright: 0;\n\t\tborder-radius: .5rem 0 0 .5rem;\n\t\tborder-right: none !important;\n\t}\n}\n\nul, ol {\n\tpadding-inline-start: 0;\n}\n\n.aligncenter {\n\tmargin: 0 auto;\n\ttext-align: center;\n}\n\n.wp-block-post ul {\n\tlist-style: disc;\n}\n\n.wp-block-post ul ul {\n\tlist-style: circle;\n}.wp-block-post ul ul ul {\n\tlist-style: square;\n}",
 		"elements": {
 			"button": {
 				":active": {
@@ -505,7 +505,7 @@
 					}
 				},
 				"color": {
-					"text": "#044bd9"
+					"text": "var(--wp--preset--color--primary)"
 				},
 				"typography": {
 					"textDecoration": "underline"
