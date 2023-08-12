@@ -11,11 +11,13 @@
 <!-- /wp:heading -->
 
 <!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"fontFamily":"merriweather"} -->
-<p class="has-merriweather-font-family"><?php echo esc_html_x( 'This page could not be found.', 'Message to convey that a webpage could not be found', 'indielol' ); ?></p>
-<!-- /wp:paragraph -->
+<div class="wp-block-group">
+	<!-- wp:paragraph {"fontFamily":"merriweather"} -->
+	<p class="has-merriweather-font-family"><?php echo esc_html_x( 'This page could not be found.', 'Message to convey that a webpage could not be found', 'indielol' ); ?></p>
+	<!-- /wp:paragraph -->
 
-<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'label', 'indielol' ); ?>","placeholder":"<?php echo esc_attr_x( 'Search...', 'placeholder for search field', 'indielol' ); ?>","showLabel":false,"width":100,"widthUnit":"%","buttonText":"<?php esc_attr_e( 'Search', 'indielol' ); ?>","buttonUseIcon":true,"align":"center"} /--></div>
+	<!-- wp:search {"label":"<?php echo esc_html_x( 'Search', 'label', 'indielol' ); ?>","placeholder":"<?php echo esc_attr_x( 'Search...', 'placeholder for search field', 'indielol' ); ?>","showLabel":false,"buttonText":"<?php esc_attr_e( 'Search', 'indielol' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px","width":"1px"}},"borderColor":"tertiary"} /-->
+</div>
 <!-- /wp:group -->
 
 <!-- wp:spacer {"height":"var(--wp--preset--spacing--80)"} -->
