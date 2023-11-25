@@ -8,15 +8,15 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:indieblocks/facepile -->
-<div class="wp-block-indieblocks-facepile"><!-- wp:heading -->
-<h2 class="wp-block-heading"><?php echo esc_html_x( 'Likes, Bookmarks, and Reposts', 'Title of the likes, bookmarks, and reposts "facepile"', 'indielol' ); ?></h2>
+<div class="wp-block-indieblocks-facepile"><!-- wp:heading {"fontSize":"large"} -->
+<h2 class="wp-block-heading has-large-font-size"><?php echo esc_html_x( 'Likes, Bookmarks, and Reposts', 'Title of the likes, bookmarks, and reposts "facepile"', 'indielol' ); ?></h2>
 <!-- /wp:heading -->
 
 <!-- wp:indieblocks/facepile-content {"avatarSize":3,"icons":true} /--></div>
 <!-- /wp:indieblocks/facepile -->
 
 <!-- wp:comments -->
-<div class="wp-block-comments"><!-- wp:comments-title /-->
+<div class="wp-block-comments"><!-- wp:comments-title {"fontSize":"large"} /-->
 
 <!-- wp:comment-template -->
 <!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->

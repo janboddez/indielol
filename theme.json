@@ -23,12 +23,12 @@
 					"slug": "contrast"
 				},
 				{
-					"color": "#044bd9",
+					"color": "#184c78",
 					"name": "Primary",
 					"slug": "primary"
 				},
 				{
-					"color": "#f2836b",
+					"color": "#00635a",
 					"name": "Secondary",
 					"slug": "secondary"
 				},
@@ -40,7 +40,8 @@
 			]
 		},
 		"layout": {
-			"contentSize": "900px"
+			"contentSize": "720px",
+			"wideSize": "960px"
 		},
 		"spacing": {
 			"spacingScale": {
@@ -138,40 +139,41 @@
 				{
 					"fontFace": [
 						{
-							"fontFamily": "Merriweather",
+							"fontFamily": "Source Serif 4",
 							"fontStyle": "normal",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/merriweather-v30-latin_latin-ext-regular.woff2"
+								"file:./assets/fonts/source-serif-4-v7-latin_latin-ext-regular.woff2"
 							]
 						},
 						{
-							"fontFamily": "Merriweather",
+							"fontFamily": "Source Serif 4",
 							"fontStyle": "italic",
 							"fontWeight": "400",
 							"src": [
-								"file:./assets/fonts/merriweather-v30-latin_latin-ext-italic.woff2"
+								"file:./assets/fonts/source-serif-4-v7-latin_latin-ext-italic.woff2"
 							]
 						},
 						{
-							"fontFamily": "Merriweather",
+							"fontFamily": "Source Serif 4",
 							"fontStyle": "normal",
-							"fontWeight": "700",
+							"fontWeight": "600",
 							"src": [
-								"file:./assets/fonts/merriweather-v30-latin_latin-ext-700.woff2"
+								"file:./assets/fonts/source-serif-4-v7-latin_latin-ext-600.woff2"
 							]
 						},
 						{
-							"fontFamily": "Merriweather",
+							"fontFamily": "Source Serif 4",
 							"fontStyle": "italic",
-							"fontWeight": "700",
+							"fontWeight": "600",
 							"src": [
-								"file:./assets/fonts/merriweather-v30-latin_latin-ext-700italic.woff2"
+								"file:./assets/fonts/source-serif-4-v7-latin_latin-ext-600italic.woff2"
 							]
 						}
 					],
-					"fontFamily": "\"Merriweather\", Georgia, serif",
-					"slug": "merriweather"
+					"fontFamily": "\"Source Serif 4\", Georgia, serif",
+					"name": "Source Serif 4",
+					"slug": "source-serif-4"
 				},
 				{
 					"fontFace": [
@@ -237,7 +239,7 @@
 	"styles": {
 		"blocks": {
 			"core/code": {
-				"css": "overflow-x: auto;",
+				"css": "& {\n\toverflow-x: auto;\n}\n\n& code {\n\toverflow-wrap: initial;\nwhite-space: pre;\n}",
 				"spacing": {
 					"padding": {
 						"bottom": "var(--wp--preset--spacing--30)",
@@ -333,11 +335,8 @@
 						}
 					}
 				},
-				"spacing": {
-					"margin": {
-						"bottom": "var(--wp--preset--spacing--30)",
-						"top": "var(--wp--preset--spacing--30)"
-					}
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--xx-large)"
 				}
 			},
 			"core/query": {
@@ -395,6 +394,7 @@
 				}
 			},
 			"core/site-title": {
+				"css": "& a {\n\tcolor: var(--wp--preset--color--primary);\n}",
 				"elements": {
 					"link": {
 						":active": {
@@ -418,8 +418,19 @@
 					}
 				},
 				"typography": {
+					"fontFamily": "var:preset|font-family|inter",
 					"fontWeight": "700",
 					"lineHeight": "1"
+				}
+			},
+			"core/query-pagination-next": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|inter"
+				}
+			},
+			"core/query-pagination-previous": {
+				"typography": {
+					"fontFamily": "var:preset|font-family|inter"
 				}
 			},
 			"core/table-of-contents": {
@@ -430,7 +441,7 @@
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
 		},
-		"css": "@media (min-width: 782px) {\n\thtml {\n\t\toverflow-y: scroll;\n\t}\n\n\t.wp-block-navigation-item__content::after {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\twidth: 0;\n\t\theight: 1px;\n\t\tbackground: currentColor;\n\t\ttransition: width 0.25s;\n\t}\n\n\t.wp-block-navigation-item__content:hover::after {\n\t\twidth: 100%;\n\t}\n}\n\n@media (min-width: 1224px) {\n\t.wp-block-query-pagination a {\n\t\tbackground: #fff;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\tpadding: 1rem;\n\t\ttransform: translateY(-50%);\n\t\tborder: solid 1px #ddd;\n\t\tz-index: 11;\n\t}\n\n\t.wp-block-query-pagination-previous {\n\t\tleft: 0;\n\t\tborder-radius: 0 .5rem .5rem 0;\n\t\tborder-left: none !important;\n\t}\n\n\t.wp-block-query-pagination-next {\n\t\tright: 0;\n\t\tborder-radius: .5rem 0 0 .5rem;\n\t\tborder-right: none !important;\n\t}\n}\n\nul, ol {\n\tpadding-inline-start: 0;\n}\n\n.aligncenter {\n\tmargin: 0 auto;\n\ttext-align: center;\n}\n\n.wp-block-post ul {\n\tlist-style: disc;\n}\n\n.wp-block-post ul ul {\n\tlist-style: circle;\n}.wp-block-post ul ul ul {\n\tlist-style: square;\n}",
+		"css": ".home > div#page {\n\tpadding-top: var(--wp--style--root--padding-top);\n\tpadding-bottom: var(--wp--style--root--padding-bottom);\n\tpadding-right: var(--wp--style--root--padding-right);\n\tpadding-left: var(--wp--style--root--padding-left);\n}\n\ndiv#page > div#header, div#page > div#signup-content, div#page > div#footer {\n\tmax-width: var(--wp--style--global--content-size);\n\tmargin-left: auto !important;\n\tmargin-right: auto !important;\n}\n\ndiv#page > hr {\n\tborder: none;\n}\n\n.mu_register {\n\twidth: 100% !important;\n}\n\n.mu_register input[type=\"submit\"], .mu_register #blog_title, .mu_register #user_email, .mu_register #blogname, .mu_register #user_name {\n\tfont: inherit;\n}\n\n@media (min-width: 782px) {\n\thtml {\n\t\toverflow-y: scroll;\n\t}\n\n\t.wp-block-navigation-item__content::after {\n\t\tcontent: '';\n\t\tdisplay: block;\n\t\twidth: 0;\n\t\theight: 1px;\n\t\tbackground: currentColor;\n\t\ttransition: width 0.25s;\n\t}\n\n\t.wp-block-navigation-item__content:hover::after {\n\t\twidth: 100%;\n\t}\n}\n\n@media (min-width: 1224px) {\n\t.wp-block-query-pagination a {\n\t\tbackground: #fff;\n\t\tposition: fixed;\n\t\ttop: 50%;\n\t\tpadding: 1rem;\n\t\ttransform: translateY(-50%);\n\t\tborder: solid 1px #ddd;\n\t\tz-index: 11;\n\t}\n\n\t.wp-block-query-pagination-previous {\n\t\tleft: 0;\n\t\tborder-radius: 0 .5rem .5rem 0;\n\t\tborder-left: none !important;\n\t}\n\n\t.wp-block-query-pagination-next {\n\t\tright: 0;\n\t\tborder-radius: .5rem 0 0 .5rem;\n\t\tborder-right: none !important;\n\t}\n}\n\nul, ol {\n\tpadding-inline-start: 0;\n}\n\n.aligncenter {\n\tmargin: 0 auto;\n\ttext-align: center;\n}\n\n.wp-block-post ul {\n\tlist-style: disc;\n}\n\n.wp-block-post ul ul {\n\tlist-style: circle;\n}.wp-block-post ul ul ul {\n\tlist-style: square;\n}\n\n.wpcf7-form-control {\n\tfont: inherit;\n}\n\n.wpcf7-response-output {\n\tmargin-inline: 0 !important;\n}",
 		"elements": {
 			"button": {
 				":active": {
@@ -498,8 +509,8 @@
 					"text": "var(--wp--preset--color--tertiary)"
 				},
 				"typography": {
-					"fontFamily": "var:preset|font-family|inter",
-					"fontWeight": "700",
+					"fontFamily": "var:preset|font-family|source-serif-4",
+					"fontWeight": "600",
 					"lineHeight": "1.4"
 				}
 			},
@@ -530,14 +541,14 @@
 		"spacing": {
 			"blockGap": "var(--wp--preset--spacing--30)",
 			"padding": {
-				"bottom": "var(--wp--preset--spacing--40)",
+				"bottom": "0px",
 				"left": "var(--wp--preset--spacing--30)",
 				"right": "var(--wp--preset--spacing--30)",
 				"top": "var(--wp--preset--spacing--40)"
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|inter",
+			"fontFamily": "var:preset|font-family|source-serif-4",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "1.75"
 		}
