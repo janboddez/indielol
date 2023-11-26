@@ -8,8 +8,8 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)">
-	<!-- wp:indieblocks/facepile -->
-	<div class="wp-block-indieblocks-facepile">
+	<!-- wp:indieblocks/facepile {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} -->
+	<div class="wp-block-indieblocks-facepile" style="margin-bottom:var(--wp--preset--spacing--50)">
 		<!-- wp:heading {"fontSize":"large"} -->
 		<h2 class="wp-block-heading has-large-font-size"><?php echo esc_html_x( 'Likes, Bookmarks, and Reposts', 'Title of the likes, bookmarks, and reposts "facepile"', 'indielol' ); ?></h2>
 		<!-- /wp:heading -->
