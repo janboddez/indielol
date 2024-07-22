@@ -14,7 +14,7 @@
 		<h2 class="wp-block-heading has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--30)"><?php echo esc_html_x( 'Likes, Bookmarks, and Reposts', 'Title of the likes, bookmarks, and reposts "facepile"', 'indielol' ); ?></h2>
 		<!-- /wp:heading -->
 
-		<!-- wp:indieblocks/facepile-content {"avatarSize":3,"icons":true} /-->
+		<!-- wp:indieblocks/facepile-content {"avatarSize":3,"icons":true,"backgroundColor":"#fff"} /-->
 	</div>
 	<!-- /wp:indieblocks/facepile -->
 
@@ -23,8 +23,8 @@
 		<!-- wp:comments-title {"fontSize":"large"} /-->
 
 		<!-- wp:comment-template -->
-			<!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-			<div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--40)">
+			<!-- wp:columns {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+			<div class="wp-block-columns" style="margin-bottom:var(--wp--preset--spacing--30)">
 				<!-- wp:column {"width":"48px"} -->
 				<div class="wp-block-column" style="flex-basis:48px">
 					<!-- wp:avatar {"size":48,"isLink":true,"style":{"border":{"radius":"50%"},"spacing":{"margin":{"top":"0.25rem"}}}} /-->
