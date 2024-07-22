@@ -412,10 +412,10 @@
 						"top": "var(--wp--preset--spacing--30)"
 					},
 					"padding": {
-						"bottom": "var(--wp--preset--spacing--20)",
+						"bottom": "calc(0.875 * var(--wp--preset--spacing--40))",
 						"left": "var(--wp--preset--spacing--40)",
 						"right": "var(--wp--preset--spacing--40)",
-						"top": "var(--wp--preset--spacing--20)"
+						"top": "calc(0.875 * var(--wp--preset--spacing--40))"
 					}
 				}
 			},
